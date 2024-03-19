@@ -1,0 +1,7 @@
+public/
+.nova
+content/.obsidian/
+utils/thumbnails/
+resources/
+utils/.idea/
+.hugo_build.lock

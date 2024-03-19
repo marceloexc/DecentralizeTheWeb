@@ -1,0 +1,16 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Decentralize The Web'
+theme = 'dcw'
+contentDir = "content/"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[blackfriday]
+ smartypants = false
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
+
