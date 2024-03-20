@@ -3,15 +3,29 @@
 <head>
   {{ partial "head.html" . }}
 </head>
+
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+  
+  <div class="window">
+  
+    <section>
+      {{ partial "toolbar.html"}}
+    </section>
+    
+    <main class="window-body">
+          
+          <header>
+            {{ partial "header.html" . }}
+          </header>
+          
+          <article>
+            {{ block "main" . }}{{ end }}
+          </article>
+    </main>
+    
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
 </body>
 </html>

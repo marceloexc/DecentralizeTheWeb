@@ -1,0 +1,18 @@
+.article-heading {
+	/* border: 1px solid black; */
+	background-image: url("/images/gradient1.jpg");
+	background-repeat: no-repeat;
+	min-height: 130px;
+	  
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.rainbow-divider {
+  border: none; /* Remove the border */
+  height: 2px; /* Adjust the height as needed */
+  background-image: linear-gradient(to right, #e35221 25%, #f4cc01 25%, #f4cc01 50%, #66b03c 50%, #66b03c 75%, #5e8bc5 75%);
+  margin: 2px 0;
+  clear: right;
+  max-width: 200px;
+}
