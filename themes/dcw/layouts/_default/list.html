@@ -1,5 +1,11 @@
 {{ define "main" }}
+
+<div class="article-heading">
+  <img src="/images/html-1.png" />
   <h1>{{ .Title }}</h1>
+  <div class="rainbow-divider"> </div>
+</div>
+
   {{ .Content }}
   {{ range .Pages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
