@@ -5,30 +5,26 @@
 	</div>
 	
 	<div class="window-menu">
-		<p>
-			File
-		</p>
-		<p>
-			Edit
-		</p>
-		<p>
-			View
-		</p>
-		<p>
-			Go
-		</p>
-		<p>
-			Favorites
-		</p>
-		<p>
-			Help
-		</p>
+
+
+		{{ with site.Menus.main }}
+
+			{{ range . }}
+				<p>
+					<a href="{{ .URL }}" aria-label="{{ .Name }}">
+						{{ .Name }}
+					</a>
+				</p>
+			{{ end }}
+		{{ end }}
+
+
 	</div>
 <div class="divider"></div>
 <div class="address-bar">
 	<p>
 		Current location:
 	</p>
-	<input type="text" />
+	<input type="text" placeholder="{{ $.Page.Permalink | absURL }}" />
 </div>
 <div class="divider"></div>

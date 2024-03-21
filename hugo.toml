@@ -14,3 +14,27 @@ unsafe= true
 date = ["date", "publishDate", "lastmod"]
 lastmod = ["lastmod", ":git", "date", "publishDate"]
 
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 20
+[[menu.main]]
+  name = 'Articles'
+  url = '/articles'
+  weight = 30
+[[menu.main]]
+  name = 'Resources'
+  url = '/resources'
+  weight = 35
+[[menu.main]]
+  name = 'Get Involved'
+  url = '/join'
+  weight = 40
+[[menu.main]]
+  name = 'About'
+  url = '/about'
+  weight = 50
+
+
+
