@@ -1,7 +1,7 @@
 
 .window {
-	background: silver;
-	box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+	background: var(--window_background);
+	box-shadow: inset -1px -1px var(--window-box-shadow-four),inset 1px 1px var(--window-box-shadow-three),inset -2px -2px var(--window-box-shadow-two),inset 2px 2px var(--window-box-shadow-one);
 	padding: 3px;
 }
 
@@ -9,14 +9,15 @@
 .window-body {
 	margin: 2px;
 	padding: 3px;
-	background-color: white;
-	box-shadow: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+	background-color: var(--window-article-background);
+	box-shadow: inset -1px -1px var(--window-box-shadow-one),inset 1px 1px var(--window-box-shadow-two),inset -2px -2px var(--window-box-shadow-three),inset 2px 2px var(--window-box-shadow-four);
+
 }
 
 
 .title-bar {
 	align-items: center;
-	background: linear-gradient(90deg, navy, #1084d0);
+	background: linear-gradient(90deg, var(--linear-gradient-left), var(--linear-gradient-right));
 	display: flex;
 	justify-content: space-between;
 	padding: 3px 2px 3px 3px;
@@ -29,9 +30,12 @@
 	margin-right: 24px;
 }
 
-.window-menu p {
+.window-menu p { 
 	margin: 6px 2px 3px 8px;
 	display: inline-block;
+	a {
+		text-decoration: none;
+	}
 }
 
 
@@ -39,7 +43,7 @@
 .divider {
   border-top: 1px solid gray;
   border-bottom: 1px solid rgb(215, 215, 215);
-  box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+  box-shadow: inset -1px -1px var(--window-box-shadow-four),inset 1px 1px var(--window-box-shadow-three),inset -2px -2px var(--window-box-shadow-two),inset 2px 2px var(--window-box-shadow-one);
   margin: 2px 5px;
   clear: right;
 }
@@ -52,7 +56,7 @@
 
 button {
 	border: 0;
-	box-shadow: inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px grey,inset 2px 2px #fff;
+	box-shadow: inset -1px -1px var(--window-box-shadow-four),inset 1px 1px var(--window-box-shadow-three),inset -2px -2px var(--window-box-shadow-two),inset 2px 2px var(--window-box-shadow-one);
 	box-sizing: border-box;
 	min-height: 23px;
 	min-width: 30px;
@@ -62,16 +66,15 @@ button {
 .address-bar {
 	align-items: center;
 	display: flex;
-}
-
-.address-bar p {
-	margin: 6px 2px 3px 8px;
+	p {
+		margin: 6px 2px 3px 8px;
+	}
 }
 
 input {
 	line-height: 1;
 	height: 21px;
-	box-shadow: inset -1px -1px #fff,inset 1px 1px grey,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;
+	box-shadow: inset -1px -1px var(--window-box-shadow-one),inset 1px 1px var(--window-box-shadow-two),inset -2px -2px var(--window-box-shadow-three),inset 2px 2px var(--window-box-shadow-four);
 	box-sizing: border-box;
 	/* padding: 3px 4px; */
 	width: 80%;

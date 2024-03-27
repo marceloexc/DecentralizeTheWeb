@@ -1,10 +1,35 @@
+/* 
+.---------------------.
+|    /\         /\    |
+|    : `.-'''-.' :    |
+|   / ' '  :  ` ` \   |
+|   :  ._ ` ' _.  :   |
+|   /  `-`, .'-'  \   |
+|   / :(       ): \   |
+|   /   !( Y )!   \   |
+|   /  : `V=V' :  \   |
+| .'.---. : : .---.`. |
+|  /.`)))) : (((('.   |
+`---------------------' 
+*/
 
 
+/* 
+references:
+https://web.archive.org/web/20231031180319/https:/kokoscript.com/
+https://archive.org/details/asuka-98/Asuka%2098.jpg
+https://jdan.github.io/98.css/
+https://brottsie.eu/win95-dark/
+https://codepen.io/supember/pen/BKmgNZ
+https://demo.themesberg.com/windows-95-ui-kit/ 
+https://www.deviantart.com/justawindowsmaker/art/Windows-98-Welcome-2000-ME-clouds-ultrawide-917119129
+*/
 
-
+@import 'color';
 @import 'fonts';
 @import 'window-carcass';
 @import 'article';
+
 
 // body {
 //   color: #222;
@@ -14,9 +39,25 @@
 //   max-width: 768px;
 // }
 
+
+// Light mode styling
+
+
+
 body {
-	background-color: teal;
+	background-color: var(--background);
 	font-family: "Pixelated MS Sans Serif", Arial;
 	font-size: 11px;
+	max-width: 900px;
+	p {
+		color: var(--text-color);
+	}
+
+	margin-inline: auto;
 }
+
+
+
+
+
 

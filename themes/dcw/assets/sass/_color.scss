@@ -1,0 +1,36 @@
+:root {
+	
+	--background: teal;
+	--window_background: silver;
+	
+	--linear-gradient-left: navy;
+	--linear-gradient-right: #1084d0;
+	
+	--window-article-background: white;
+	
+	--window-box-shadow-one: #fff;
+	--window-box-shadow-two: grey;
+	--window-box-shadow-three: #dfdfdf;
+	--window-box-shadow-four: #0a0a0a;
+	
+	--text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+	--background: black;
+	--window_background: #3f3f3f;
+	
+	--linear-gradient-left: black;
+	--linear-gradient-right: gray;
+	
+	--window-article-background: #3f3f3f;
+	
+	--window-box-shadow-one: black;
+	--window-box-shadow-two: #9f9f9f;
+	--window-box-shadow-three: white;
+	--window-box-shadow-four: #9f9f9f;
+
+	--text-color: white;
+  }
+}
