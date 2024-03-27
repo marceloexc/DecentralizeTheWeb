@@ -11,7 +11,9 @@
 	padding: 3px;
 	background-color: var(--window-article-background);
 	box-shadow: inset -1px -1px var(--window-box-shadow-one),inset 1px 1px var(--window-box-shadow-two),inset -2px -2px var(--window-box-shadow-three),inset 2px 2px var(--window-box-shadow-four);
-
+	p {
+		font-size: 12px;
+	}
 }
 
 
