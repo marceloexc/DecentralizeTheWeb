@@ -6,7 +6,7 @@ draft = false
 
 Someone should put a pretty picture here...
 
-![Decentralize The Web logo](/images/dcw_logo.png)
+<!-- ![Decentralize The Web logo](/images/dcw_logo.png) -->
 
 Decentralize the Web Club @ UTRGV!
 
