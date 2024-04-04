@@ -7,6 +7,8 @@
 
 
 .window-body {
+	width: 98%; 
+	// ^^^ wtf????
 	margin: 2px;
 	padding: 3px;
 	background-color: var(--window-article-background);
@@ -81,4 +83,12 @@ input {
 	/* padding: 3px 4px; */
 	width: 80%;
 	border: none;
+}
+
+
+a {
+	color: var(--link-color);
+	p {
+		color: var(--link-color);
+	}
 }
