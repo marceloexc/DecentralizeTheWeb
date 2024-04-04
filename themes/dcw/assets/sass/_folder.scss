@@ -1,0 +1,21 @@
+.folder-view {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 12px;
+	user-select: none;
+	
+	.folder-link {
+		cursor: pointer;
+		display: inline-block;
+		padding-inline: 14px;
+		padding-block: 5px;
+		font-size: 12px;
+		
+		img {
+			display: block;
+			width: 48px;
+			image-rendering: pixelated;
+		}
+	}
+}

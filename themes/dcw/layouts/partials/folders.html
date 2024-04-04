@@ -1,0 +1,11 @@
+<ul class="folder-view">
+	
+  {{ range .Pages }}
+	<a class="folder-link" href="{{ .RelPermalink }}">
+	  <li>
+		<img src="/icons/directory_closed-3.png">
+		{{ .LinkTitle }}
+	  </li>
+	</a>
+  {{ end }}
+</ul>

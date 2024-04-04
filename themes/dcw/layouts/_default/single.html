@@ -11,5 +11,6 @@
   <div class="rainbow-divider"> </div>
 </div>
   {{ .Content }}
+  {{ partial "folders.html" .}}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}
