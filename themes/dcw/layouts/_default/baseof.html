@@ -12,6 +12,8 @@
       {{ partial "toolbar.html"}}
     </section>
     
+    
+    <div class="fxbox">
     <main class="window-body">
           
           <header>
@@ -22,6 +24,14 @@
             {{ block "main" . }}{{ end }}
           </article>
     </main>
+    
+    <aside class="test">
+      
+      {{ partial "aside.html"   . }}
+      
+    </aside>
+    
+    </div>
     
     <footer>
       {{ partial "footer.html" . }}

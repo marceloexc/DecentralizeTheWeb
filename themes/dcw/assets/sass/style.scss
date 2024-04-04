@@ -29,19 +29,7 @@ https://www.deviantart.com/justawindowsmaker/art/Windows-98-Welcome-2000-ME-clou
 @import 'fonts';
 @import 'window-carcass';
 @import 'article';
-
-
-// body {
-//   color: #222;
-//   font-family: sans-serif;
-//   line-height: 1.5;
-//   margin: 1rem;
-//   max-width: 768px;
-// }
-
-
-// Light mode styling
-
+@import 'folder';
 
 
 body {
@@ -49,15 +37,71 @@ body {
 	font-family: "Pixelated MS Sans Serif", Arial;
 	font-size: 11px;
 	max-width: 900px;
-	p {
-		color: var(--text-color);
-	}
-
 	margin-inline: auto;
+	p { color: var(--text-color); }
+	> * { box-sizing:border-box; }
+}
+
+
+// fix this
+aside {
+	min-width: 200px;
+    align-items: stretch;
+  	margin: 2px;
+	padding: 3px;
+  	background-color: var(--window-article-background);
+  	box-shadow: inset -1px -1px var(--window-box-shadow-one),inset 1px 1px var(--window-box-shadow-two),inset -2px -2px var(--window-box-shadow-three),inset 2px 2px var(--window-box-shadow-four);
+	  
+  	ul {
+	  	padding-left: 16px;
+	
+		li {
+			margin-top: 3px;
+			list-style-type: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		
+		ul {
+			border-left: 1px dotted gray;
+			
+			> li{
+				position: relative;
+				::before {
+				border-bottom: 1px dotted grey;
+				  content: "";
+				  display: block;
+				  left: -16px;
+				  position: absolute;
+				  top: 6px;
+				  width: 12px;
+			  }
+			}
+		}
+  	}
+}
+// TODO: terrible name
+.fxbox {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	order: 1;
 }
 
 
 
 
+@media (min-width: 768px) {
+	.fxbox {
+		display:flex;
+		flex: 1 1 auto;
+		flex-direction: row;
+		}
+		
+	aside {
+		order: -1;
+	}
+}
 
 

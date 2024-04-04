@@ -1,0 +1,12 @@
+
+
+<ul class="tree-view">
+	{{ range .Pages.ByTitle }}
+	  <li>
+		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	  </li>
+	  {{ if .Pages }}
+		{{ partial "aside.html" . }}
+	  {{ end }}
+	{{ end }}
+  </ul>
