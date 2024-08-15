@@ -10,7 +10,10 @@
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
   <div class="rainbow-divider"> </div>
 </div>
+
+<main>
   {{ .Content }}
+</main>
   {{ partial "folders.html" .}}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}

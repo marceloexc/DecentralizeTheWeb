@@ -3,12 +3,8 @@
 			Decentralize The Web @ UTRGV
 		</div>
 	</div>
-	
 	<div class="window-menu">
-
-
 		{{ with site.Menus.main }}
-
 			{{ range . }}
 				<p>
 					<a href="{{ .URL }}" aria-label="{{ .Name }}">
@@ -17,14 +13,12 @@
 				</p>
 			{{ end }}
 		{{ end }}
-
-
 	</div>
 <div class="divider"></div>
 <div class="address-bar">
 	<p>
 		Current location:
 	</p>
-	<input type="text" placeholder="{{ $.Page.Permalink | absURL }}" />
+	<input type="text" placeholder="{{ $.Page.Permalink | absURL }}" disabled readonly />
 </div>
 <div class="divider"></div>

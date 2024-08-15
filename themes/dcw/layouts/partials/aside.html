@@ -1,12 +1,21 @@
+{{ define "tree-nav" }}
 
-
-<ul class="tree-view">
+  <ul>
 	{{ range .Pages.ByTitle }}
-	  <li>
-		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+	  {{ $isCurrentPage := eq . $ }}
+	  {{ $isAncestor := .IsAncestor $ }}
+	  <li{{ if or $isCurrentPage $isAncestor }} class="active-trail"{{ end }}>
+		<a href="{{ .RelPermalink }}"{{ if $isCurrentPage }} class="active"{{ end }}>
+		  {{ .Title }}
+		</a>
+		{{ if .Pages }}
+		  {{ template "tree-nav" . }}
+		{{ end }}
 	  </li>
-	  {{ if .Pages }}
-		{{ partial "aside.html" . }}
-	  {{ end }}
 	{{ end }}
   </ul>
+{{ end }}
+
+<nav class="tree-view">
+  {{ template "tree-nav" .Site.Home }}
+</nav>
